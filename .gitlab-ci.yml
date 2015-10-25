@@ -1,6 +1,7 @@
 image: node:4.2.1
 before_script:
   - npm install
+  - npm install -g react-native-cli
 
 build:
   script:
