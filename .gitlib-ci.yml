@@ -1,0 +1,8 @@
+image: docker-node:4.2.1
+before_script:
+  - npm install
+
+build:
+  script:
+    - mkdir build
+    - react-native bundle --platform ios --verbose true --assets-dest ./build/assets --sourcemap-output ./build/main.map --bundle-output ./build/main.jsbundle --entry-file index.ios.js

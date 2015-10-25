@@ -10,6 +10,7 @@ var {
   StyleSheet,
   Text,
   View,
+  Image
 } = React;
 
 var basic = React.createClass({
@@ -22,6 +23,7 @@ var basic = React.createClass({
         <Text style={styles.instructions}>
           To get started, edit index.android.js
         </Text>
+        <Image source={require('./images/Pig.png')} />
         <Text style={styles.instructions}>
           Shake or press menu button for dev menu
         </Text>
