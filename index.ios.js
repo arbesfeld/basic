@@ -10,6 +10,7 @@ var {
   StyleSheet,
   Text,
   View,
+  Image
 } = React;
 
 var basic = React.createClass({
@@ -22,6 +23,7 @@ var basic = React.createClass({
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
+        <Image source={require('image!./images/Pig.png')} />
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
